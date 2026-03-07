@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Issues Page</title>
+    <title>Github Issues Page</title>
+    <!--tailwind+daisyui-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h2>hello world</h2>
+    <!--Navbar-->
+    <header>
+        <div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1">
+    <img src="assets/github-logo.png" alt="">
+    <h2 class="btn btn-ghost text-xl">Github Issuses Tracker</h2>
+  </div>
+  <div class="flex gap-2">
+    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+   <button class="btn btn-primary">Search Issuses</button>
+  </div>
+</div>
+    </header>
+    <!--buttons-->
+    <section class="bg-base-100 shadow-sm w-10/12 mx-auto py-10">
+        <div>
+            <button class="btn btn-primary">All</button>
+            <button class="btn btn-primary">Open</button>
+            <button class="btn btn-primary">Close</button>
+        </div>
+    </section>
+    <!--issuses total-->
+    <section class="w-10/12 bg-base-100 shadow-sm mx-auto py-10">
+     <div class="flex justify-between">
+        <div class="ml-8 flex gap-4">
+         <div>
+         <img src="assets/Aperture.png" alt="">
+         </div>
+
+        <div class="flex flex-col">
+         <h3 class="font-bold text-xl">50 Issues</h3>
+         <p>Track and manage your project issues</p>
+        </div>
+       </div>
+
+        <div class="flex gap-5 mr-5">
+            <p>Open</p>
+            <p>Close</p>
+        </div>
+     </div>
+    </section>
 </body>
 </html>
