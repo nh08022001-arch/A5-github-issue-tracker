@@ -10,9 +10,9 @@
 </head>
 <body>
     <!--Navbar-->
-    <header>
-        <div class="navbar bg-base-100 shadow-sm">
-  <div class="flex-1">
+    <header class="bg-base-100 shadow-sm">
+        <div class="navbar w-10/12 mx-auto">
+  <div class="flex-1 gap-2">
     <img src="assets/github-logo.png" alt="">
     <h2 class="btn btn-ghost text-xl">Github Issuses Tracker</h2>
   </div>
@@ -23,28 +23,27 @@
 </div>
     </header>
     <!--buttons-->
-    <section class="bg-base-100 shadow-sm w-10/12 mx-auto py-10">
-        <div>
-            <button class="btn btn-primary">All</button>
-            <button class="btn btn-primary">Open</button>
-            <button class="btn btn-primary">Close</button>
+    <section class="w-10/12 mx-auto py-6">
+        <div class="flex gap-3">
+            <button id="all-btn" class="btn btn-sm btn-primary">All</button>
+            <button id="open-btn" class="btn btn-sm btn-outline">Open</button>
+            <button id="closed-btn" class="btn btn-sm btn-outline">Close</button>
         </div>
     </section>
     <!--issuses total-->
-    <section class="w-10/12 bg-base-100 shadow-sm mx-auto py-10">
-     <div class="flex justify-between">
-        <div class="ml-8 flex gap-4">
-         <div>
+    <section class="w-10/12 bg-base-100 shadow-sm mx-auto py-8 rounded-lg">
+     <div class="flex justify-between items-center px-6">
+        <div class="flex gap-4 items-center">
+
          <img src="assets/Aperture.png" alt="">
-         </div>
 
         <div class="flex flex-col">
-         <h3 class="font-bold text-xl">50 Issues</h3>
-         <p>Track and manage your project issues</p>
+         <h3 id="total-issues" class="font-bold text-xl">0 Issues</h3>
+         <p class="text-sm text-gray-500">Track and manage your project issues</p>
         </div>
        </div>
 
-        <div class="flex gap-5 mr-5">
+        <div class="flex gap-6 text-sm">
             <p>Open</p>
             <p>Close</p>
         </div>
