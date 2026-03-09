@@ -11,14 +11,14 @@
 <body>
     <!--Navbar-->
     <header class="bg-base-100 shadow-sm">
-        <div class="navbar w-10/12 mx-auto">
-  <div class="flex-1 gap-2">
+        <div class="navbar w-11/12 mx-auto flex flex-col md:flex-row items-center justify-between py-2">
+  <div class="flex-1 gap-2 mb-2 md:mb-0">
     <img src="assets/github-logo.png" alt="">
     <h2 class="btn btn-ghost text-xl">Github Issuses Tracker</h2>
   </div>
   <div class="flex gap-2">
-    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-   <button class="btn btn-primary">Search Issuses</button>
+    <input id="search-input" type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+   <button id="search-btn" class="btn btn-primary">Search Issuses</button>
   </div>
 </div>
     </header>
@@ -86,6 +86,27 @@
 
     </div>
 
+  </div>
+</div>
+    </section>
+    <!-- Modal -->
+    <section>
+<input type="checkbox" id="issue-modal" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box max-w-2xl relative">
+    <label for="issue-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    
+    <h3 id="modal-title" class="font-bold text-xl mb-2"></h3>
+    <p id="modal-description" class="mb-2"></p>
+    
+    <div id="modal-labels" class="flex gap-2 mb-2"></div>
+    
+    <p><strong>Priority:</strong> <span id="modal-priority"></span></p>
+    <p><strong>Status:</strong> <span id="modal-status"></span></p>
+    <p><strong>Author:</strong> <span id="modal-author"></span></p>
+    <p><strong>Assignee:</strong> <span id="modal-assignee"></span></p>
+    <p><strong>Created At:</strong> <span id="modal-created"></span></p>
+    <p><strong>Updated At:</strong> <span id="modal-updated"></span></p>
   </div>
 </div>
     </section>
