@@ -9,7 +9,7 @@ document.getElementById("signin-btn").addEventListener("click", function(){
     //match password and username
     if(userName == "admin" && password == "admin123"){
         //alert("login success");
-        window.location.assign("/main-project.html");
+        window.location.assign("./main-project.html");
 
     }else{
         //alert("login failled");
